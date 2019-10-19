@@ -1,0 +1,39 @@
+.footer{
+    
+    bottom: 0;
+    background-color: rgb(142, 167, 248);
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 0.6rem;
+   width: 100%;
+}
+
+.footer .logos-socials-media{
+    padding: 10px;
+}
+
+.footer .logos-socials-media img{
+    width: 30px;
+    padding-right: 20px;
+}
+
+.footer .logos-socials-media a{
+    text-decoration: none;
+}
+
+.footer .copyright{
+    color: white;
+    background-color: rgb(96, 168, 235);
+    padding: 10px;
+}
+
+.btn__back-to-top{
+    margin: 5px;
+    padding: 5px;
+    background: #fff;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(157, 201, 184);
+}

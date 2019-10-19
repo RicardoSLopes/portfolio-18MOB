@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portifólio</title>
+        <link href="./header.css" rel="stylesheet" />
+        <link href="./main.css" rel="stylesheet" />
+        <link href="./footer.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="./img/cross.ico"  type="image/x-icon">
+    </head>
+    
+    <body onload="load()">
+        <header role="header" class="header">
+            <div class="container">
+                <img class="logo" src="./img/logo.png" alt="">
+                <nav class="item-menu">
+                    <ul>
+                        <li><a href="#career"> Carreira </a></li>
+                        <li><a href="#skill"> habilidade </a></li>
+                        <li><a href="#contact"> contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="container-body">
+            <main role="main" class="main" id="main">
+                <div class="image-Ricardo">
+                    <img src="./img/ricardo.JPG" alt="foto Ricardo Santana">
+                </div>
+                <div class="description">
+                    <h3>Ricardo Santana Lopes</h3>
+                    <p> skill 1 - skill 2 - skill 3 </p>
+                    <div class="brief-description">
+                        aqui uma breve descrição. aqui uma breve descrição. aqui uma breve descrição. aqui uma breve descrição. aqui uma breve descrição. aqui uma breve descrição.
+                    </div>
+                    
+                </div>
+            </main>
+            
+            <section class="about-me margin-default" id="career">
+                <div class="about-me-layout">
+                    <button onclick="toggleTab('content--resume', this, 'red')" class="btn btn--resume btn--active">Resumo</button>
+                    <button onclick="toggleTab('content--experience', this, 'green')" class="btn btn--experience">Experiencia</button>
+                    <button onclick="toggleTab('content--education', this, 'blue')" class="btn btn--education">Escolaridade</button>
+                    
+                    <div class="tabs">
+                        <div class="content content--resume">Resumo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate ipsam quia et excepturi temporibus distinctio minima quibusdam officia aliquam placeat a nam, veniam repellendus vel consequuntur vero incidunt voluptatum!</div>
+                        <div class="content content--experience">Experiencia: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate ipsam quia et excepturi temporibus distinctio minima quibusdam officia aliquam placeat a nam, veniam repellendus vel consequuntur vero incidunt voluptatum!</div>
+                        <div class="content content--education active">Escolaridade: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate ipsam quia et excepturi temporibus distinctio minima quibusdam officia aliquam placeat a nam, veniam repellendus vel consequuntur vero incidunt voluptatum!</div>
+                    </div>   
+                </div>
+            </section>
+            
+            <section class="border margin-default" id="skill">
+                <div class="skills__container">
+                    <div class="font-default skill-information">
+                        <h1>Habilidade</h1>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate ipsam quia et excepturi temporibus distinctio minima quibusdam officia aliquam placeat a nam, veniam repellendus vel consequuntur vero incidunt voluptatum!
+                    </div>
+                    <div class="font-default skill-bar">
+                        <div>
+                            <span class="label skill-label"> HTML </span>
+                            <div class="skills-bar skills-bar--HTML">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="label skill-label"> CSS </span>
+                            <div class="skills-bar skills-bar--CSS">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="label skill-label"> JS </span>
+                            <div class="skills-bar skills-bar--JS">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border margin-default" id="contact">
+                <div class="contact__container">
+                    <div class="font-default data contact-information">
+                        <h1>Contato</h1>
+                        <form class="form">
+                            <div class="data">
+                                <div class="fields">
+                                    <label class="label label-input" for="name">Nome</label>
+                                    <input class="name field field--name" id="name" type="text" name="name" />
+                                    <label class="label label-input" for="subject">Assunto</label>
+                                    <input class="subject field field--subject" id="subject" type="text" name="subject" />
+                                    <label class="label label-input" for="email">E-mail</label>
+                                    <input class="email field field--email" id="email" type="email" name="email" />
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="textArea">
+                                    <label class="label label-input" for="msg">Mensagem</label>
+                                    <textarea class="text-message" id="msg" name="message" rows="10"></textarea>
+                                    <button class="btn-send" type="button" onclick="sendEmail()">Enviar</button>
+                                </div>
+                            </div>                       
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer role="footer" class="footer">
+            <div class="logos-socials-media">
+                <a href="https://www.facebook.com/ricardo.santana.524596?ref=bookmarks" target="_blank">
+                    <img  src="./img/icon_facebook.png" alt="link facebook">
+                </a>
+                <a href="https://github.com/RicardoSLopes" target="_blank">
+                    <img  src="./img/icon-github.png" alt="link GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/ricardo-santana-a51b08103/" target="_blank">
+                    <img  src="./img/icon_Linkedin.png" alt="link Linkedin">
+                </a>
+            </div>
+            <button class="btn__back-to-top">Voltar ao topo</button>
+            
+            <div class="copyright">
+                &copy; todos direitos reservados
+            </div>
+        </footer>
+        
+        <div class="loading">Enviando E-mail...</div>
+        
+        <script src="./js/load.js"></script>
+        <script src="./js/BackToTop.js"></script>
+        <script src="./js/changeTab.js"></script>
+        <script src="./js/sendEmail.js"></script>
+        <script src="./js/toggleMenu.js"></script>
+        
+    </body>
+    </html>

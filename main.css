@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-body{
+    margin: 0 10%;
+}
+
+.main{
+    padding: 60px 0 0;
+    display: flex;
+    background-color: rgb(122, 153, 255);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+.main .image-Ricardo {
+    width: 100%;
+    padding: 10px 0 10px 50px;
+}
+
+.main .image-Ricardo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 20px 0;
+    border: 3px solid white;
+    box-shadow: 6px 6px 6px 3px rgb(75, 74, 74);
+} 
+
+.main .description{
+    padding: 30px;
+}
+
+.main .brief-description{
+    padding: 10px 0;
+}
+
+.border{
+    border-top: 2px solid #5555a7;
+    padding: 70px 0 0;
+}
+
+.about-me{
+    padding: 70px 0 0;
+}
+
+.about-me .btn{
+    background: #fff;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.about-me .btn--active{
+    background-color: #5555a7;
+    border-radius: 3px 3px 0 0;
+    color: white;
+}
+
+.about-me .tabs .content{
+    border-radius: 0 5px 5px 5px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-top: 3px solid #5555a7;
+    padding: 10px;
+} 
+
+.content--experience,
+.content--education {
+    display: none;
+}
+ 
+
+.skills__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-information, .contact-information{
+    width: 48%;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between
+}
+
+.font-default{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.form .data,
+.form .message,
+.skill-bar{
+    width: 48%;
+}
+
+.skills__container .skills-bar{
+    height: 30px;
+    width: 97%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.skills__container .skills-bar .progress-bar{
+    height: 100%;
+    width: 60%;
+    background-color: rgb(142, 167, 248);
+    border-radius: 20px 20px 20px 20px;
+} 
+
+.data{
+    width: 100%;
+}
+
+.field, 
+textArea  {
+    width: 94%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+.margin-default{
+    margin: 30px 30px;
+}
+
+.label{
+    margin: 5px 0;
+    display: block;
+    padding-left: 10px;
+}
+
+.message .textArea .btn-send{
+    margin: 10px 0 0;
+    padding: 5px;
+    background: #fff;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(157, 201, 184);
+}
+
+.loading { 
+    display: none; 
+}
+
+@media screen and (max-width: 769px) {
+    .main{
+        display: block;
+    }
+    
+    
+    body .container-body{
+        margin: 0 5%;
+    }
+    
+    .container-body .main .image-Ricardo{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    } 
+    
+    .container-body .main .description{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .container-body .main .brief-description {
+        padding: 10px;
+    }
+    
+    .skills__container {
+        display: block;
+        width: 100%;        
+    }
+    
+    .skill-information,
+    .skills__container .skill-bar{
+        width: 100%; 
+        padding: 10px 0;
+    }
+    
+    .form{
+        display: block;
+    }
+    
+    .form .data,
+    .form .message{
+        width: 100%;
+        padding: 10px;
+    }
+}
